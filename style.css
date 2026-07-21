@@ -1,0 +1,328 @@
+
+
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+
+
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#0f172a;
+    border-bottom:1px solid rgba(255,255,255,.1);
+    z-index:1000;
+}
+
+.logo{
+    font-size:32px;
+    font-weight:700;
+    color:#fff;
+}
+
+.navbar{
+    display:flex;
+    gap:35px;
+}
+
+.navbar a{
+    text-decoration:none;
+    color:#fff;
+    font-size:18px;
+    transition:.3s;
+}
+
+.navbar a:hover{
+    color:#3b82f6;
+}
+
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:120px 8%;
+    gap:60px;
+}
+
+.content{
+    max-width:650px;
+}
+
+.content h1{
+    font-size:60px;
+    line-height:1.2;
+    margin-bottom:20px;
+}
+
+.content h1 span{
+    color:#3b82f6;
+}
+
+.content h2{
+    font-size:35px;
+    color:#cbd5e1;
+    margin-bottom:20px;
+}
+
+.content p{
+    font-size:20px;
+    color:#94a3b8;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+
+
+.btn-group{
+    display:flex;
+    gap:20px;
+}
+
+.btn{
+    padding:15px 35px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
+    background:#3b82f6;
+    color:#fff;
+}
+
+.primary:hover{
+    background:#2563eb;
+}
+
+.secondary{
+    border:2px solid #3b82f6;
+    color:#3b82f6;
+}
+
+.secondary:hover{
+    background:#3b82f6;
+    color:#fff;
+}
+
+
+
+.image-box{
+    width:380px;
+    height:380px;
+    border-radius:50%;
+    overflow:hidden;
+    border:5px solid #3b82f6;
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+
+.section-title{
+    text-align:center;
+    font-size:45px;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#3b82f6;
+}
+
+
+
+.about{
+    padding:100px 8%;
+    background:#1e293b;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
+
+.about-content p{
+    font-size:20px;
+    color:#cbd5e1;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+
+
+.skills{
+    padding:100px 8%;
+}
+
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:30px;
+}
+
+.skill-card{
+    background:#1e293b;
+    border-radius:15px;
+    padding:40px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(59,130,246,.3);
+}
+
+.skill-card i{
+    font-size:60px;
+    color:#3b82f6;
+    margin-bottom:20px;
+}
+
+.skill-card h3{
+    font-size:24px;
+}
+
+
+
+.projects{
+    padding:100px 8%;
+    background:#1e293b;
+}
+
+.project-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.project-card{
+    background:#0f172a;
+    padding:30px;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,.1);
+    transition:.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(59,130,246,.3);
+}
+
+.project-card h3{
+    font-size:28px;
+    color:#3b82f6;
+    margin-bottom:20px;
+}
+
+.project-card p{
+    font-size:18px;
+    color:#cbd5e1;
+    line-height:1.7;
+}
+
+
+
+.contact{
+    padding:100px 8%;
+}
+
+.contact-form{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+    padding:18px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+
+    background:#1e293b;
+    color:#fff;
+
+    font-size:17px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.3s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    border:1px solid #3b82f6;
+
+    box-shadow:0 0 10px rgba(59,130,246,.3);
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+.contact-form button{
+
+    cursor:pointer;
+
+    border:none;
+
+    font-size:18px;
+
+}
+
+
+
+footer{
+
+    text-align:center;
+
+    padding:25px;
+
+    background:#1e293b;
+
+}
+
+footer p{
+
+    color:#cbd5e1;
+
+    font-size:18px;
+
+}
